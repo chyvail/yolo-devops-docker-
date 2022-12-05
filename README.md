@@ -4,6 +4,9 @@ Make sure that you have the following installed:
 - npm 
 - [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/) and start the mongodb service with `sudo service mongod start`
 
+## Confirm MongoDB Instance is running
+  `sudo service mongod status`
+
 ## Navigate to the Client Folder 
  `cd client`
 
