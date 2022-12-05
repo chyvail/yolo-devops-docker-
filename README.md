@@ -1,3 +1,9 @@
+# Link to Images on Docker Hub
+
+Here are the client and backend images available to pull on docker hub
+- [client](https://hub.docker.com/r/chivile/yoromy-client)
+- [backend](https://hub.docker.com/r/chivile/yoromy-backend)
+
 # Requirements
 Make sure that you have the following installed:
 - [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
