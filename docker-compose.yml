@@ -12,6 +12,8 @@ services:
       - '8000:8000'
     networks:
       - yoromy-network
+    depends_on:
+      - mongo-db
   
   backend:
     build: 
