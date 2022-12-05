@@ -12,6 +12,17 @@ services:
       - '8000:8000'
     networks:
       - yoromy-network
+  
+  backend:
+    build: 
+      context: .
+      dockerfile: backend.dockerfile
+    image: chivile/yoromy-backend:v1.0
+    container_name: yoromy-backend
+    ports:
+      - '3000:3000'
+    networks:
+      - yoromy-network
     depends_on:
       - mongo-db
 
