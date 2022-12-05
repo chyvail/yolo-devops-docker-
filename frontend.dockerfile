@@ -1,12 +1,12 @@
 # Define the base image
 
-FROM node:14-alpine
+FROM node:14-slim
 
 # Define our working directory
 
 WORKDIR /app
 
-#Copy tha package and package-lock.json file
+#Copy the package and package-lock.json file
 
 COPY client/package*.json ./
 

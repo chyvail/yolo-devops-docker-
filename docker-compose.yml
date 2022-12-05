@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  client:
+    tty: true
+    build: 
+      context: .
+      dockerfile: frontend.dockerfile
+    image: chivile/yoromy-client:v1.0
+    container_name: yoromy-client
+    ports:
+      - '8000:8000'
+    networks:
+      - yoromy-network
+    depends_on:
+      - mongo-db
+
+  mongo-db:
+    image: mongo
+    container_name: yoromy-mongodb
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - database:/data/db
+    networks:
+      - yoromy-network
+
+volumes:
+  database:
+
+networks:
+  yoromy-network:
+    driver: bridge
+
