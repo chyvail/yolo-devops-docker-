@@ -22,7 +22,7 @@ services:
     image: chivile/yoromy-backend:v1.0
     container_name: yoromy-backend
     ports:
-      - '3000:3000'
+      - '5000:5000'
     networks:
       - yoromy-network
     depends_on:
