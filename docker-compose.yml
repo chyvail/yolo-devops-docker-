@@ -9,7 +9,7 @@ services:
     image: chivile/yoromy-client:v1.0
     container_name: yoromy-client
     ports:
-      - '8000:8000'
+      - '3000:3000'
     networks:
       - yoromy-network
     depends_on:

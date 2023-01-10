@@ -20,7 +20,7 @@ COPY client/ .
 
 #Expose the port
 
-EXPOSE 8000
+EXPOSE 3000
 
 #Start our app
 
