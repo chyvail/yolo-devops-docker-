@@ -31,3 +31,5 @@ docker_packges:
   - "containerd.io"
 
 docker_compose_url: https://github.com/docker/compose/releases/download/1.28.2/docker-compose-Linux-x86_64
+
+git_url: https://github.com/chyvail/yolo-devops-docker-.git

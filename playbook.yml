@@ -3,7 +3,7 @@
   become: true
   vars_files:
 
-    - vars/default.yaml
+    - vars/default.yml
 
 
   tasks:
@@ -68,18 +68,14 @@
       dest: /usr/local/bin/docker-compose
 
       mode: u+x,g+x,o+x
+  
 
-  - name: Clone a github repository
+  - name: Install git
 
-    git:
+    apt:
+    
+      name: git
 
-      repo: "{{ git_url }}"
+      state: present
 
-      dest: /home/vagrant/site
-
-      clone: yes
-
-      update: yes
-
-
- 
+      update_cache: yes
