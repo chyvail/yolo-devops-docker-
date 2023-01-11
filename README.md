@@ -4,6 +4,10 @@ Here are the client and backend images available to pull on docker hub
 - [client](https://hub.docker.com/r/chivile/yoromy-client)
 - [backend](https://hub.docker.com/r/chivile/yoromy-backend)
 
+# Ansible setup 
+
+Look [here](https://github.com/chyvail/yolo-devops-docker-/blob/master/Ansible_Docker-Explanation.md)
+
 # Requirements
 Make sure that you have the following installed:
 - [node](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04) 
