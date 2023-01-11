@@ -7,20 +7,9 @@
   
   roles:
     - docker-setup
+    - repo-clone
 
   tasks:
-
-  - name: Clone a github repository
-
-    git:
-
-      repo: "{{ git_url }}"
-
-      dest: /home/vagrant/site
-
-      clone: yes
-
-      update: yes
 
   - name: Start our Containers
 
