@@ -8,16 +8,6 @@
   roles:
     - docker-setup
     - repo-clone
-
-  tasks:
-
-  - name: Start our Containers
-
-    become: true
-
-    shell:
-      cmd: "docker-compose -f docker-compose.yml up -d"
-      chdir: /home/vagrant/site
-
+    - start-containers
 
  

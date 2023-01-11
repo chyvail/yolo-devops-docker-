@@ -17,6 +17,16 @@ To connect via ssh use `vagrant ssh`
 
 To run our playbook do `vagrant provision`
 
+### Present Roles
+
+For this project i created three roles, `docker-setup`, `repo-clone`, and `start-container`
+
+The roles installs docker and docker-compse, clones the repo from github and starts the containers respectively
+
+Here's a look at how it looks like:
+
+![playbook-overview](https://user-images.githubusercontent.com/25295807/211704986-55a66e9d-aa45-4f21-aad4-956a70d8853e.png)
+
 ### Running containers in the VM
 
 Here are the running containers in the VM
