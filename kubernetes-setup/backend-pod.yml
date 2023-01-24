@@ -9,9 +9,13 @@ spec:
     image: chivile/yoromy-backend:v2.0
     tty: true
     stdin: true
+    env:
+      - name: MONGO_URL
+        value: mongodb://admin:password@mongo-db:27017
     ports:
     - containerPort: 5000
       protocol: TCP
     resources:
     command: ["npm", "start"]
-    
+
+
