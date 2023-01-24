@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: yoromy-client
-    image: chivile/yoromy-client
+    image: chivile/yoromy-client:v1.0
     tty: true
     stdin: true
     ports:

@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: yoromy-backend
-    image: chivile/yoromy-backend
+    image: chivile/yoromy-backend:v1.0
     tty: true
     stdin: true
     ports:
