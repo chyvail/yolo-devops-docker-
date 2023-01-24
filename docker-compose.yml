@@ -6,7 +6,7 @@ services:
     build: 
       context: .
       dockerfile: frontend.dockerfile
-    image: chivile/yoromy-client:v1.0
+    image: chivile/yoromy-client:v2.0
     container_name: yoromy-client
     ports:
       - '3000:3000'
@@ -19,7 +19,7 @@ services:
     build: 
       context: .
       dockerfile: backend.dockerfile
-    image: chivile/yoromy-backend:v1.0
+    image: chivile/yoromy-backend:v2.0
     container_name: yoromy-backend
     ports:
       - '5000:5000'
