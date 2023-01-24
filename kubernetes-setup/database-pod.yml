@@ -5,6 +5,8 @@ metadata:
   name: mongodb
 
 spec:
+  volumes:
+    - name: mongodb-vlm
   containers:
   - name: mongodb
     image: mongo:latest
@@ -12,4 +14,9 @@ spec:
     - containerPort: 27017
       protocol: TCP
     resources:
+    volumeMounts:
+      - mountPath: "/data/db"
+        name: mongodb-vlm
+    
+
     
