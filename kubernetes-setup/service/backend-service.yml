@@ -4,6 +4,8 @@ metadata:
   name: backendservice
 spec:
   type: LoadBalancer
+  selector:
+    name: yoromy-backend
   ports:
   - port: 5050
     targetPort: 5050
